@@ -20,15 +20,16 @@ def main():
         #num2 = int(input("Digite o segundo número: "));    
         #num3 = int(input("Digite o terceiro número: "));
 
-        while max_divisor1 <= num1:
+        while num1 > 1:
             
-            resto = num1 % max_divisor1; 
-            if resto==0:
-                print(max_divisor1)
-            
+            num1 = num1 / max_divisor1; 
+            resto = num1 % max_divisor1;
+            print(max_divisor1)
+                    
             max_divisor1 = max_divisor1 + 1;
 
-        print('Nº 1',num1,' Max divisor: ',max_divisor1)
+
+        print('Nº 1  Max divisor: ',max_divisor1)
         #print('Nº 2',num2,' Max divisor: ',max_divisor2)
         #print('Nº 3',num3,' Max divisor: ',max_divisor3)
 
